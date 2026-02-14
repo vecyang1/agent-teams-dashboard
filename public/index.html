@@ -81,7 +81,7 @@ header h1 .logo-icon{color:var(--accent)}
 .card-title{font-size:.9rem;font-weight:600;display:flex;align-items:center;gap:8px}
 .card-title i{color:var(--text-muted)}
 .card-count{font-size:.72rem;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:10px;min-width:22px;text-align:center}
-.card-body{flex:1;overflow-y:auto;max-height:440px}
+.card-body{flex:1;overflow-y:auto;max-height:440px;min-height:320px}
 .card-body::-webkit-scrollbar{width:5px}
 .card-body::-webkit-scrollbar-track{background:transparent}
 .card-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
@@ -546,7 +546,13 @@ async function loadTeamData(teamName) {
 }
 
 function renderMembers() {
-  const members = state.members || [];
+  let members = state.members || [];
+
+  // Filter by selected team if one is selected
+  if (selectedTeam) {
+    members = members.filter(m => m.team === selectedTeam);
+  }
+
   document.getElementById('memberCount').textContent = members.length;
   const el = document.getElementById('memberList');
 
