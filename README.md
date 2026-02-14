@@ -3,6 +3,7 @@
 
 # Agent Teams Dashboard
 
+Inspired by https://x.com/alterxyz4/status/2021892207574405386.
 Real-time web dashboard for monitoring [Claude Code](https://docs.anthropic.com/en/docs/claude-code) Agent Teams.
 
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![License](https://img.shields.io/badge/license-MIT-blue)
