@@ -1,3 +1,6 @@
+<img width="1526" height="1049" alt="image" src="https://github.com/user-attachments/assets/6b262edf-ce14-4916-a577-8101e90c6852" />
+
+
 # Agent Teams Dashboard
 
 Real-time web dashboard for monitoring [Claude Code](https://docs.anthropic.com/en/docs/claude-code) Agent Teams.
